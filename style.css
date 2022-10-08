@@ -1,5 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap");
 
+:root {
+  --background: #252525;
+  --colores-iconos: #ffa400;
+  --button: linear-gradient(
+    90deg,
+    rgba(255, 161, 0, 1) 20%,
+    rgba(251, 16, 61, 1) 95%
+  );
+}
 * {
   margin: 0;
   padding: 0;
@@ -7,4 +16,8 @@
   font-family: "Montserrat";
   list-style-type: none;
   text-decoration: none;
+}
+
+body {
+  background: var(--background);
 }
