@@ -1,0 +1,33 @@
+/* Mediaqueries Categorias */
+
+@media (max-width: 1000px) {
+  body {
+    font-size: 14px;
+  }
+
+  #categorias h3 {
+    text-align: center;
+  }
+
+  .categorias-container {
+    max-width: 644px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  body {
+    font-size: 10px;
+  }
+  .categorias-container {
+    gap: 15px;
+  }
+
+  .categoria-div {
+    width: 250px;
+  }
+}
