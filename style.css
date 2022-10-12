@@ -31,12 +31,13 @@ body {
 }
 
 #categorias {
-  width: 90%;
+  width: 100%;
+  height: 100vh;
   color: var(--text);
   max-width: 63em;
   margin: 0 auto;
   display: grid;
-  grid-template-rows: auto auto;
+  grid-template-rows: auto 1fr;
   row-gap: 0.62em;
   margin-top: 10px;
 }
@@ -49,6 +50,7 @@ body {
   width: 100%;
   padding: 0.62em 0;
   display: grid;
+  margin: 0 auto;
   grid-template-columns: repeat(7, 1fr);
   justify-items: center;
 }
