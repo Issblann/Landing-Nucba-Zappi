@@ -21,3 +21,68 @@
 body {
   background: var(--background);
 }
+
+header{
+  display: flex;
+  min-height: 70px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+}
+
+.logo img{
+  height: 75px;
+  margin-top: 20px;
+  margin-left: 35px;
+}
+
+a{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+nav a {
+  padding-right: 60px;
+  font-size: 12px;
+  
+
+}
+
+@media (max-width:700px){
+  header{
+    flex-direction: column;
+  }
+  nav{
+    padding: 10px 0px;
+  }
+
+}
+
+footer{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 40px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: #ffffff;
+  padding-bottom: 25px;
+  
+}
+
+footer img{
+  height: 20px;
+}
+
+.parrafo1{
+  display: flex;
+  flex: row;
+  position: absolute;
+  bottom: 100px;
+  text-indent: 20pt;
+}
