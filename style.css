@@ -275,14 +275,14 @@ nav a {
 /* footer */
 
 footer {
-  display: flex;
-  justify-content: space-evenly;
-  gap: 40px;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  color: #ffffff;
-  padding-bottom: 25px;
+ color: white;
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ margin-top: 60px;
+ margin-bottom: 40px;
+ text-align: center;
+ display: inline;
 }
 
 footer img {
@@ -296,4 +296,11 @@ footer img {
   bottom: 100px;
   text-indent: 20pt;
   font-size: 16px;
+}
+
+.listas{
+  display: flex;
+  justify-content: center;
+  text-indent: 20pt;
+  margin-bottom: 20px;
 }
