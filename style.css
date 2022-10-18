@@ -27,9 +27,12 @@
 
 body {
   background: var(--background);
+}
+main{
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  gap: 40px;
 }
 
 /* header */
@@ -39,6 +42,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+  
 }
 
 .logo {
@@ -66,7 +70,6 @@ nav a {
 
 #hero {
   margin-top: 4rem;
-  max-width: 1200px;
   padding-right: 7rem;
   display: flex;
   justify-content: center;
@@ -100,7 +103,6 @@ nav a {
 .btn {
   background: var(--gradiente-button);
   width: 120px;
-  padding: 10px;
   border-radius: 20px;
   border: none;
   cursor: pointer;
@@ -139,13 +141,13 @@ nav a {
 }
 
 /* seccion de recomendados */
-.recomsection h2 {
+
+.subtitle {
   display: flex;
-  padding: 20px;
+  padding: 10px 0 ;
   color: var(--text);
   font-size: 18px;
   justify-content: flex-start;
-  padding-left: 15%;
   font-weight: 600;
 }
 .recommendations {
@@ -159,12 +161,12 @@ nav a {
 /* caja de la seccion de recomendados */
 .recombox {
   display: flex;
-  width: 300px;
+  width: 320px;
   height: 80px;
   background-color: var(--color-cajas);
   align-items: center;
   border-radius: 1rem;
-  padding: 5px;
+  padding: 12px;
   gap: 5px;
   justify-content: space-between;
 }
@@ -195,9 +197,7 @@ nav a {
   text-align: center;
   justify-content: flex-end;
 }
-.gradientbutton:hover {
-  cursor: pointer;
-}
+
 /* texto de precio del producto */
 .valor {
   font-size: 18px;
@@ -206,15 +206,6 @@ nav a {
   background-clip: text;
   -webkit-background-clip: text;
   font-weight: 700;
-}
-
-@media (max-width: 700px) {
-  header {
-    flex-direction: column;
-  }
-  nav {
-    padding: 10px 0px;
-  }
 }
 
 #categorias {
@@ -272,6 +263,184 @@ nav a {
   transition-duration: 0.3s;
 }
 
+/* CSS LO MAS POPULARES PARTE 1 */
+
+.container-populares h2{
+  display: flex;
+  justify-content:flex-start ;
+}
+
+.container-populares {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  max-width: 1200px;
+  margin-bottom: 65px;
+}
+
+.card-populares {
+  width: 282px;
+  height: 213px;
+  display: flex;
+  background-color: var(--color-cajas);
+  justify-content: center;
+  flex-wrap: wrap;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.container-card {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px ;
+}
+
+.card-populares p {
+  font-size: 14px;
+  color: rgb(146, 142, 142);
+  font-size: 400;
+}
+
+.card-populares span {
+  font-size: 18px;
+  font-weight: 700;
+  background: var(--gradiente-button);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.card-populares button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-populares {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 237px;
+  height: 97px;
+  border-radius: 25px;
+  margin-top: 5px;
+}
+
+button {
+  width: 85px;
+  height: 30px;
+  border-radius: 15px;
+  background: var(--gradiente-button);
+  color: var(--text);
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.button-add {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-bottom: 15px;
+
+}
+
+.title-card {
+  color: var(--text);
+  display: flex;
+  justify-content: flex-start;
+  font-size: 15px;
+  font-weight: 600;
+
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 2px;
+  padding: 0 0 5px 5px;
+}
+
+
+
+/* CSS LO MAS POPULARES PARTE 2 */
+
+/* estilado general de cada una de las pizzas*/
+.item {
+  width: 282px;
+  height: 213px;
+  background: #252525;
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+/*estilado de las imagenes de las pizzas*/
+.item img {
+  width: 237px;
+  height: 97px;
+  border-radius: 16px;
+}
+
+.item img {
+  transition: transform 0, 5;
+}
+
+.item img:hover {
+  transform: scale(1.2);
+}
+
+/* estilado de la informacion que aparece debajo de las imagenes de las pizzas*/
+.info-top {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-top span {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.info-top p {
+  font-size: 14px;
+  font-weight: 400;
+  color:var(--text);
+  opacity: 30%;
+}
+
+.info-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-bottom p {
+  font-size: 19px;
+  font-weight: 700;
+  background: linear-gradient(to right, #FFA100, #FF005C);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.info-bottom a {
+  background: linear-gradient(to right, #FFA100, #FF005C);
+  color: white;
+  text-align: center;
+  justify-content: center;
+  padding: 8px 0px;
+  width: 86px;
+  border-radius: 17px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
 /* footer */
 
 footer {
@@ -279,7 +448,7 @@ footer {
  display: flex;
  flex-direction: row;
  justify-content: center;
- margin-top: 60px;
+ margin-top: 100px;
  margin-bottom: 40px;
  text-align: center;
  display: inline;

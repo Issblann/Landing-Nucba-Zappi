@@ -21,3 +21,48 @@
   transition-property: all;
   transition-duration: 0.3s;
 }
+
+/* ANIMACIONES LOS MAS POPULARES */
+
+.card-populares {
+  transition: all 200ms;
+  position: relative;
+
+}
+
+.card-populares:hover {
+  transform: scale(1.15);
+  z-index: 2;
+  border: solid 1px var(--text);
+}
+
+
+/* animacion botones */
+.btn .gradientbutton{
+  transition: all 0.3s ease-out;
+}
+
+.btn:hover {
+  transition: all 0.4s ease-in-out;
+  background: black;
+}
+
+.btn:hover>a {
+  background: var(--gradiente-button);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.gradientbutton:hover {
+  transition: all 0.4s ease-in-out;
+  background: black;
+}
+.gradientbutton:hover>a {
+  background: var(--gradiente-button);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+
